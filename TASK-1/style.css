@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    height: 100vh;
+    max-width: 1000px;
+    text-align: center;
+    background: linear-gradient(#ff8a00,#e52e71);
+
+}
+
+.container {
+    font-size: 25px;
+    margin:0 0 30px 0;
+    color:antiquewhite;
+    text-shadow: 3px 1px black;
+    padding: 2rem 1rem; 
+}
+
+.header {
+    padding: 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin:0 auto; 
+
+}
+
+.header h1 {
+    font: size 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+#new-task-input {
+    flex:1 1 0%;
+    background-color: var(white);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    width:80%;
+    height:50px;
+}
+
+.new-task-input::placeholder {
+    color :var(gray);
+}
+
+#new-task-submit {
+    font-size:1.25rem;
+    padding: 1rem;
+    background-color: var(white);
+    font-weight: 300;
+    border-radius: 1rem;
+    border-color:black;
+    color:black;
+    cursor:pointer;
+    width:15%;
+    height: 50px;
+}
+
+#new-task-submit:hover {
+    opacity: 0.8;
+}
+
+#new-task-submit:active{
+    opacity: 0.6;
+}
+
+.container.todoList{
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.todoList li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: white;
+    border-radius: 3rem;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor:default;
+    overflow: hidden;
+}
+
+.todoList li span {
+    position:absolute;
+    right: -45px;;
+    color: white;
+    width:45px;
+    text-align: center;
+    background:red;
+    border-radius: 0 3px 3px 0; 
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+
+.todoList li:hover span{
+    right:0px;
+}
+    
+
+
+
+    
+    
+    
+    
+
+
