@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/your/style.css">
+ </head>
+  <body>
+    <div class="calculator">
+      <input type="text" class="screen" id="screen" disabled>
+      <table>
+        <tr>
+          <td><button onclick="clearScreen()">C</button></td>
+          <td><button onclick="backspace()"><</button></td>
+          <td><button onclick="addToScreen('/')">/</button></td>
+          <td><button onclick="addToScreen('*')">x</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="addToScreen('7')">7</button></td>
+          <td><button onclick="addToScreen('8')">8</button></td>
+          <td><button onclick="addToScreen('9')">9</button></td>
+          <td><button onclick="addToScreen('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="addToScreen('4')">4</button></td>
+          <td><button onclick="addToScreen('5')">5</button></td>
+          <td><button onclick="addToScreen('6')">6</button></td>
+          <td><button onclick="addToScreen('+')">+</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="addToScreen('1')">1</button></td>
+          <td><button onclick="addToScreen('2')">2</button></td>
+          <td><button onclick="addToScreen('3')">3</button></td>
+          <td rowspan="2"><button onclick="calculate()">=</button></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button onclick="addToScreen('0')">0</button></td>
+          <td><button onclick="addToScreen('.')">.</button></td>
+        </tr>
+      </table>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
